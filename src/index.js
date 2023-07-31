@@ -13,6 +13,7 @@ module.exports = function toReadable (number) {
         result += units[arr.at(-1)]
 
     }
+
     // Проверка второго рязряда (десятки)
     if (arr.at(-2)) {
         if (arr.at(-2) === "1") {
@@ -34,6 +35,7 @@ module.exports = function toReadable (number) {
         }
 
     }
+
     // Проверка третьего разряда (сотни)
     if (arr.at(-3)) {
 
@@ -48,6 +50,7 @@ module.exports = function toReadable (number) {
         }
 
     }
+
     // Вывод результата
     return result
 }
